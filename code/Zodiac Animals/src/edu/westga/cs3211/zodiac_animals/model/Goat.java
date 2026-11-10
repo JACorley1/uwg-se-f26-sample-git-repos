@@ -3,8 +3,7 @@ package edu.westga.cs3211.zodiac_animals.model;
 public class Goat {
 	int weight;
 	int height;
-	boolean isMale;
-	public Goat(int weight, int height, boolean isMale) {
+	public Goat(int weight, int height) {
 		if(weight < 0) {
 			throw new IllegalArgumentException("Weight cannot be negative");
 		}
@@ -13,6 +12,5 @@ public class Goat {
 		}
 		this.weight = weight;
 		this.height = height;
-		this.isMale = isMale;
 	}
 }
