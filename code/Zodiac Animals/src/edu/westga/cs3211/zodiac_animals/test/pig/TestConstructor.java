@@ -4,11 +4,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class TestConstructor {
+import edu.westga.cs3211.zodiac_animals.model.Pig;
+
+public class TestConstructor {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void testConstructor() {
+		Pig animal = new Pig("Billy", 200);
+		
+		String specification = animal.getName() + " is " + animal.getWeight() + " lbs.";
+		assertEquals("Billy is 200 lbs.", specification);
 	}
 
 }
